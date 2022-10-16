@@ -1,0 +1,28 @@
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 50px;
+}
+
+img.logo {
+  width: 200px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  margin: 0 35px;
+  color: #ff6060;
+  cursor: pointer;
+}
+
+li:hover {
+  text-decoration: underline;
+}
