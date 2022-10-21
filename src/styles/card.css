@@ -1,0 +1,52 @@
+img.photo {
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 35px;
+  z-index: 0;
+}
+
+article.article:hover::after {
+  content: " ";
+  z-index: 1;
+  display: block;
+  position: absolute;
+  height: 98%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  border-radius: 30px;
+}
+
+article.article {
+  position: relative;
+  margin: 10px;
+}
+
+h2.sub-title {
+  position: absolute;
+  top: 250px;
+  left: 45px;
+  color: #fff;
+  font-size: 18px;
+  line-break: auto;
+  padding: 15px;
+  z-index: 2;
+}
+
+main.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #f7f7f7;
+  padding: 30px 0px;
+  margin: 10px 55px;
+}

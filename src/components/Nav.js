@@ -6,12 +6,16 @@ const Nav = () => {
   return (
     <header>
       <div>
-          <img src={logo} alt="kasa" className="logo" />
+        <img src={logo} alt="kasa" className="logo" />
       </div>
       <nav>
         <ul>
-          <li>Accueil</li>
-          <li>A propos</li>
+          <Link to={"/"}>
+            <li>Accueil</li>
+          </Link>
+          <Link to={"/About"}>
+            <li>A Propos</li>
+          </Link>
         </ul>
       </nav>
     </header>

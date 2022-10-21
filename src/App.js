@@ -1,10 +1,16 @@
-import Nav from '../src/components/Nav';
+import Nav from "./components/Nav";
+import Routes from "./routes";
+import './App.css'
+
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <h1>Home</h1>
+      <BrowserRouter>
+        <Nav />
+        <Routes />
+      </BrowserRouter>
     </div>
   );
 }
