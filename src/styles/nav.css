@@ -21,6 +21,7 @@ li {
   margin: 0 35px;
   color: #ff6060;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 li:hover {
@@ -29,4 +30,18 @@ li:hover {
 
 a {
   text-decoration: none;
+  font-size: 14.5px;
+}
+
+@media all and (max-width: 375px) {
+  header {
+    margin: 20px 0 20px 0;
+  }
+  img.logo {
+    width: 145px;
+    margin: 0 0 0 10px;
+  }
+  li:not(last-child) {
+    margin: 0 15px 0 0;
+  }
 }

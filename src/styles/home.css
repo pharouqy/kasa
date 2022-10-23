@@ -17,6 +17,7 @@ section {
   display: block;
   position: absolute;
   height: 98%;
+  width: 100%;
   top: 0;
   left: 0;
   right: 0;
@@ -36,4 +37,31 @@ section {
 
 .overlay > img {
   border-radius: 30px;
+  width: 100%;
+}
+
+@media all and (max-width: 375px) {
+  .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+  }
+  .overlay > img {
+    border-radius: 10px;
+    width: 90%;
+    height: 100px;
+  }
+  .overlay::after {
+    height: 100%;
+    width: 90%;
+    left: 20px;
+    border-radius: 10px;
+  }
+  .overlay > h1 {
+    top: 20%;
+    right: 10%;
+    font-size: 1.2em;
+  }
 }

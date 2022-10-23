@@ -49,4 +49,12 @@ main.container {
   background-color: #f7f7f7;
   padding: 30px 0px;
   margin: 10px 55px;
+  border-radius: 15px;
+}
+
+@media all and (max-width: 375px) {
+  main.container {
+    width: 100%;
+    margin: 25px 0 0 0;
+  }
 }
