@@ -1,0 +1,76 @@
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: relative;
+}
+
+.overlay::after {
+  content: " ";
+  z-index: 0;
+  display: block;
+  position: absolute;
+  height: 98%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(146, 144, 144, 0.5);
+  border-radius: 30px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 150px;
+}
+
+article {
+  margin-bottom: 15px;
+}
+
+h2 {
+  margin: 0;
+}
+
+p {
+  padding: 25px;
+  font-weight: 100;
+}
+
+article > div {
+  background-color: #ff6060;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  padding: 15px;
+  border-radius: 10px;
+  width: 1049px;
+}
+
+article > div:nth-child(2) {
+  background-color: #f7f7f7;
+  color: #ff6060;
+  border-radius: 0 0 20px 20px;
+  position: relative;
+  top: -5px;
+  z-index: -1;
+}
+
+.Fiabilité, .Respect, .Service, .Sécurité {
+  transform: rotate(180deg);
+}
