@@ -1,0 +1,47 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 10px 50px;
+}
+
+section {
+  width: 100%;
+}
+
+section:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section > div > h1 {
+  font-size: 2.1rem;
+  color: #ff6060;
+  margin: 10px;
+}
+
+section > div > h2 {
+  font-size: 0.8rem;
+  color: #ff6060;
+  margin-bottom: 15px;
+}
+
+section:nth-child(3) > article > div {
+  width: 582px;
+  margin: 25px 20px;
+}
+
+ {
+  display: flex;
+}
+
+section:nth-child(3) > article {
+    height: 450px;
+}

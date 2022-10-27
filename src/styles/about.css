@@ -71,6 +71,33 @@ article > div:nth-child(2) {
   z-index: -1;
 }
 
-.Fiabilité, .Respect, .Service, .Sécurité {
+.Fiabilité,
+.Respect,
+.Service,
+.Sécurité {
   transform: rotate(180deg);
+}
+
+@media all and (max-width: 375px) {
+  .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+  }
+  .overlay > img {
+    border-radius: 10px;
+    width: 90%;
+    height: 100px;
+  }
+  .overlay::after {
+    height: 100%;
+    width: 90%;
+    left: 20px;
+    border-radius: 10px;
+  }
+  article > div {
+    width: 335px;
+  }
 }
