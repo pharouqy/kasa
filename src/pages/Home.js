@@ -8,7 +8,7 @@ const Home = () => {
     <div>
       <section>
         <div className="overlay">
-          <img src={bg} alt="background"/>
+          <img src={bg} alt="background" />
           <h1>Chez vous, partout et ailleurs</h1>
         </div>
       </section>
@@ -18,7 +18,7 @@ const Home = () => {
             key={data.id}
             title={data.title}
             cover={data.cover}
-            id={`fiche/${data.id}`}
+            id={`/fiche/${data.id}`}
           />
         ))}
       </main>
