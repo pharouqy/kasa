@@ -1,0 +1,19 @@
+section:nth-child(2) > div:nth-child(2) > aside > div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  margin-top: -30px;
+  margin-left: 0px;
+}
+
+section:nth-child(2) > div:nth-child(2) > aside > div.stars_reds > img {
+  margin-right: 0px;
+}
+
+@media all and (max-width: 375px) {
+  section:nth-child(2) > div:nth-child(2) > aside > div.stars_reds {
+    margin-right: 125px;
+  }
+}
