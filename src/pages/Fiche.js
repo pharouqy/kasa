@@ -11,11 +11,12 @@ import star from "../utils/red.png";
 
 const Fiche = () => {
   const { idLog } = useParams();
-  const [dataHouse, setDataHouse] = useState(data);
+  const [dataHouse, setDataHouse] = useState(
+    data.filter((data) => data.id === idLog)[0]
+  );
   useEffect(() => {
-    const dataHouse = data.filter((data) => data.id === idLog)[0];
     setDataHouse(dataHouse);
-  }, [idLog]);
+  }, [idLog, dataHouse]);
   return (
     <main>
       <Slide pictures={dataHouse.pictures} />
