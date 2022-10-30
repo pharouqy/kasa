@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
 import Tags from "../components/Tags";
 import Profil from "../components/Profil";
 import Stars from "../components/Stars";
@@ -10,8 +11,10 @@ import star from "../utils/red.png";
 
 const Fiche = () => {
   const { idLog } = useParams();
+  const [dataHouse, setDataHouse] = useState(data);
   useEffect(() => {
     const dataHouse = data.filter((data) => data.id === idLog)[0];
+    setDataHouse(dataHouse);
   }, [idLog]);
   return (
     <main>
