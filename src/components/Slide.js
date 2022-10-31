@@ -38,7 +38,7 @@ const Slide = ({ pictures }) => {
         <BtnSlider moveSlide={nextSlide} direction={"next"} />
       )}
       <div className="compteur-container">
-        <span>{`1/${slideIndex}`}</span>
+        <span>{`${pictures.length}/${slideIndex}`}</span>
       </div>
     </div>
   );
