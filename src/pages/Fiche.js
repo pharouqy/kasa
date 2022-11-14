@@ -8,6 +8,7 @@ import Slide from "../components/Slide";
 import data from "../data.json";
 import "../styles/fiche.css";
 import star from "../utils/red.png";
+import Errors from "./404";
 
 const Fiche = () => {
   const { idLog } = useParams();
@@ -16,8 +17,8 @@ const Fiche = () => {
   );
   useEffect(() => {
     setDataHouse(dataHouse);
-  }, [idLog, dataHouse]);
-  return (
+  }, [dataHouse]);
+  return dataHouse ? (
     <main>
       <Slide pictures={dataHouse.pictures} />
       <section>
@@ -59,6 +60,8 @@ const Fiche = () => {
         />
       </section>
     </main>
+  ) : (
+    <Errors />
   );
 };
 

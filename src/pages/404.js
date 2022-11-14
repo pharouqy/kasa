@@ -1,11 +1,14 @@
-import '../styles/404.css'
+import "../styles/404.css";
+import { Link } from "react-router-dom";
 
 const Errors = () => {
   return (
     <div className="container-404">
       <h1>404</h1>
       <p>Oups! La page que vous demandez n'existe pas.</p>
-      <a href="/">Retourner sur la page d’accueil</a>
+      <Link to={"/"}>
+        <span>Retourner sur la page d’accueil</span>
+      </Link>
     </div>
   );
 };
