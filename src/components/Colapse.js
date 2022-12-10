@@ -25,12 +25,10 @@ const Colapse = ({ title, description }) => {
         <h2>{title}</h2>
         <img src={vector} alt="coche" className={title} />
       </div>
-      {open ? (
+      {open && (
         <div>
           <p>{description}</p>
         </div>
-      ) : (
-        ""
       )}
     </article>
   );

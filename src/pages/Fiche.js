@@ -26,8 +26,8 @@ const Fiche = () => {
           <h1>{dataHouse.title}</h1>
           <h2>{dataHouse.location}</h2>
           <div>
-            {dataHouse.tags.map((tag) => (
-              <Tags key={Math.random() * 10} tag={tag} />
+            {dataHouse.tags.map((tag, index) => (
+              <Tags key={index} tag={tag} />
             ))}
           </div>
         </div>
