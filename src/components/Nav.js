@@ -1,8 +1,14 @@
+import { useState, useEffect } from "react";
 import "../styles/nav.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../utils/logo.png";
 
 const Nav = () => {
+  const location = useLocation();
+  const [activeLink, setActiveLink] = useState(null);
+  useEffect(() => {
+    setActiveLink(location.pathname);
+  }, [location]);
   return (
     <header>
       <div>
@@ -11,10 +17,12 @@ const Nav = () => {
       <nav>
         <ul>
           <Link to={"/"}>
-            <li>Accueil</li>
+            <li className={activeLink === "/" ? "active" : ""}>Accueil</li>
           </Link>
           <Link to={"/About"}>
-            <li>A Propos</li>
+            <li className={activeLink === "/About" ? "active" : ""}>
+              A Propos
+            </li>
           </Link>
         </ul>
       </nav>
