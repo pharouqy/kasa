@@ -8,8 +8,8 @@ const Stars = ({ rating }) => {
   }
   return (
     <div className="stars_reds">
-      {ratings.map((star) => (
-        <img key={Math.random() * 20} src={star} alt="star_red" />
+      {ratings.map((star, index) => (
+        <img key={index} src={star} alt="star_red" />
       ))}
     </div>
   );

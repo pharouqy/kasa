@@ -1,6 +1,6 @@
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import Routes from "./routes";
+import Routes  from "./routes";
 //import { HashRouter } from "react-router-dom";
 import "./App.css";
 

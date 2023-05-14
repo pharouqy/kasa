@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Tags from "../components/Tags";
 import Profil from "../components/Profil";
@@ -11,9 +11,9 @@ import star from "../utils/red.png";
 import Errors from "./404";
 
 const Fiche = () => {
-  const { idLog } = useParams();
+  const { idLog } = useParams(); // Permet de récuperer le parametre id de l'url
   const [dataHouse, setDataHouse] = useState(
-    data.filter((data) => data.id === idLog)[0]
+    data.filter((data) => data.id === idLog)[0] //  .find()
   );
   useEffect(() => {
     setDataHouse(dataHouse);
@@ -61,7 +61,7 @@ const Fiche = () => {
       </section>
     </main>
   ) : (
-    <Errors />
+    <Navigate to="/error" replace={<Errors />} />
   );
 };
 

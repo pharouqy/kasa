@@ -18,7 +18,7 @@ const Colapse = ({ title, description }) => {
       setRotate("180deg");
       element.style.transform = `rotate(${rotate})`;
     }
-  }, [open, isOPen, rotate, title]);
+  }, [open, rotate, title]);
   return (
     <article>
       <div onClick={hendelColapse}>

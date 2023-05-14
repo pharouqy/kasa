@@ -1,15 +1,11 @@
-import "../styles/about.css";
-import bgAbout from "../utils/bg-about.png";
+import Banniere from "../components/Banniere";
 import Colapse from "../components/Colapse";
+import "../styles/about.css";
 
 const About = () => {
   return (
     <div>
-      <section>
-        <div className="overlay">
-          <img src={bgAbout} alt="background" />
-        </div>
-      </section>
+      <Banniere />
       <main>
         <Colapse
           title="Fiabilité"

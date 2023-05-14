@@ -10,8 +10,8 @@ const index = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/fiche/:idLog" element={<Fiche />} />
+      <Route path="/About" element={<About />} />
+      <Route path="/Fiche/:idLog" element={<Fiche />} />
       <Route path="/*" element={<Errors />} />
     </Routes>
   );
