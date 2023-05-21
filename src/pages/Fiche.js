@@ -1,4 +1,4 @@
-import { useParams, Navigate } from "react-router-dom";
+import { useParams, Navigate, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Tags from "../components/Tags";
 import Profil from "../components/Profil";
@@ -11,13 +11,15 @@ import star from "../utils/red.png";
 import Errors from "./404";
 
 const Fiche = () => {
+  const location = useLocation();
+  const { pathname } = location;
   const { idLog } = useParams(); // Permet de récuperer le parametre id de l'url
   const [dataHouse, setDataHouse] = useState(
     data.filter((data) => data.id === idLog)[0] //  .find()
   );
   useEffect(() => {
     setDataHouse(dataHouse);
-  }, [dataHouse]);
+  }, [dataHouse, pathname]);
   return dataHouse ? (
     <main>
       <Slide pictures={dataHouse.pictures} />
