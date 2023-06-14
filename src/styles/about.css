@@ -67,15 +67,35 @@ article > div:nth-child(2) {
   color: #ff6060;
   border-radius: 0 0 20px 20px;
   position: relative;
-  top: -5px;
+  top: -35px;
   z-index: -1;
 }
 
-.Fiabilité,
-.Respect,
-.Service,
-.Sécurité {
+@keyframes showUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-collapse.open {
   transform: rotate(180deg);
+  transition: all 1s;
+}
+
+.about-collapse-content {
+  animation-name: showUp;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+}
+
+.about-collapse-content.reverse {
+  animation-direction: reverse;
 }
 
 @media all and (max-width: 375px) {
