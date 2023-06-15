@@ -6,7 +6,7 @@ img.photo {
   z-index: 0;
 }
 
-article.article:hover::after {
+.article:hover::after {
   content: " ";
   z-index: 1;
   display: block;
@@ -23,7 +23,7 @@ article.article:hover::after {
   border-radius: 30px;
 }
 
-article.article {
+.article {
   position: relative;
   margin: 10px;
 }

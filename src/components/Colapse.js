@@ -10,20 +10,18 @@ const Colapse = ({ title, description }) => {
   };
 
   return (
-    <article>
+    <article className={`dropdown ${!open ? "" : "opened"}`}>
       <div onClick={hendelColapse}>
         <h2>{title}</h2>
         <img
           src={vector}
           alt="coche"
-          className={`about-collapse ${open ? "open" : ""}`}
+          className={`about-collapse ${open ? "open" : "closed"}`}
         />
       </div>
-      {open && (
-        <div className="about-collapse-content">
-          <p>{description}</p>
-        </div>
-      )}
+      <div className={`${open ? "about-collapse-content" : "close"}`}>
+        <p>{description}</p>
+      </div>
     </article>
   );
 };
