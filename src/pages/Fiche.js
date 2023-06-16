@@ -51,14 +51,12 @@ const Fiche = () => {
         <Colapse
           title="Description"
           description={dataHouse.description}
-          className="ficheColapse"
         />
         <Colapse
           title="Équipements"
           description={dataHouse.equipments.map((list) => {
             return <ul>{list}</ul>;
           })}
-          className="ficheColapse"
         />
       </section>
     </main>

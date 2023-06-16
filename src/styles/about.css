@@ -4,7 +4,7 @@ section {
   flex-wrap: nowrap;
   align-content: center;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .overlay {
@@ -76,7 +76,7 @@ p {
   transition: all 0.5s;
 }
 
-article.opened {
+.dropdown.opened {
   height: 100%;
   transition: all 0.5s;
 }
@@ -160,7 +160,7 @@ article.opened {
     left: 20px;
     border-radius: 10px;
   }
-  article > div {
+  .dropdown > div {
     width: 335px;
   }
 }

@@ -36,7 +36,7 @@ section:nth-child(3) > article > div {
 }
 
 section:nth-child(3) > article {
-  height: 450px;
+  height: 100px;
 }
 
 section:nth-child(2) > div:nth-child(2) > aside > div:nth-child(1) {
@@ -63,7 +63,7 @@ section:nth-child(2) > div:nth-child(1) > div {
 
 @media all and (max-width: 375px) {
   section:nth-child(3) > article {
-    height: unset;
+    height: 70px;
     width: 350px;
   }
   article {
