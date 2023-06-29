@@ -1,10 +1,15 @@
 import "../styles/stars.css";
-import star from "../utils/red.png";
+import redStar from "../utils/red.png";
+import greyStar from "../utils/grey.png";
 
 const Stars = ({ rating }) => {
   let ratings = [];
-  for (let i = 0; i < parseInt(rating); i++) {
-    ratings.push(star);
+  for (let i = 0; i < 5; i++) {
+    if (i < parseInt(rating)) {
+      ratings.push(redStar);
+    } else {
+      ratings.push(greyStar);
+    }
   }
   return (
     <div className="stars_reds">

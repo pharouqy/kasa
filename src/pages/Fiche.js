@@ -36,13 +36,6 @@ const Fiche = () => {
         <div>
           <Profil name={dataHouse.host.name} picture={dataHouse.host.picture} />
           <aside>
-            <div>
-              <img src={star} alt="star" />
-              <img src={star} alt="star" />
-              <img src={star} alt="star" />
-              <img src={star} alt="star" />
-              <img src={star} alt="star" />
-            </div>
             <Stars rating={dataHouse.rating} />
           </aside>
         </div>

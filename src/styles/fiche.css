@@ -45,8 +45,6 @@ section:nth-child(2) > div:nth-child(2) > aside > div:nth-child(1) {
   flex-wrap: nowrap;
   align-content: center;
   align-items: center;
-  margin-top: 15px;
-  filter: opacity(0.3);
   position: absolute;
   top: -15px;
   left: 0;
